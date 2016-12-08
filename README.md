@@ -1,8 +1,9 @@
 # LivelatorServe
 Livelator Backend
 
+This is a fresh app. Created from scratch by David Wainaina @2016
 
-Clone this app
-https://github.com/leonrch/SpeechToSpeech.git
+The first service to be added will be Text Translation
+
 
 
