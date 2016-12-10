@@ -1,26 +1,3 @@
----
-declared-services:
-  language-translator-service:
-    label: language_translation
-    plan: standard
-  text_to_speech:
-    label: text_speech
-    plan: standard
-  speech_to_text:
-    label: speech_text
-    plan: standard
-  language_translator:
-    label: translator
-    plan: standard
-  imfpush:
-    label: Livelator-imfpush
-    plan: Basic
-  cloudantNoSQLDB:
-    label: Livelator-cloudantNoSQLDB
-    plan: Lite
-  AvailabilityMonitoring:
-    label: AvailabilityMonitoring
-    plan: Lite
 applications:
 - path: .
   memory: 512M
