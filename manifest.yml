@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Livelator
+  host: Livelator
+  disk_quota: 1024M
+  services:
+  - Livelator-AdvancedMobileAccess
+  - Livelator-imfpush
+  - Livelator-cloudantNoSQLDB
+  - text_trans_01
+  - speech_text_01
+  - text_speech_01
