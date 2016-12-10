@@ -1,0 +1,40 @@
+---
+declared-services:
+  language-translator-service:
+    label: language_translation
+    plan: standard
+  text_to_speech:
+    label: text_speech
+    plan: standard
+  speech_to_text:
+    label: speech_text
+    plan: standard
+  language_translator:
+    label: translator
+    plan: standard
+  imfpush:
+    label: Livelator-imfpush
+    plan: Basic
+  cloudantNoSQLDB:
+    label: Livelator-cloudantNoSQLDB
+    plan: Lite
+  AvailabilityMonitoring:
+    label: AvailabilityMonitoring
+    plan: Lite
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Livelator
+  command: node app.js
+  buildpack: sdk-for-nodejs
+  host: Livelator
+  disk_quota: 1024M
+  services:
+  - Livelator-AdvancedMobileAccess
+  - Livelator-imfpush
+  - Livelator-cloudantNoSQLDB
+  - text_trans_01
+  - speech_text_01
+  - text_speech_01
